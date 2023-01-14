@@ -1,4 +1,17 @@
-<article class="card-a01">
-  <h5 class="stat mb-2">@@stat</h5>
-  <span class="eyebrow text-primary">@@eyebrow</span>
-</article>
+<div class="card  h-100 py-md-10 @@padding @@borderTop bg-@@bgColorCard">
+  <div class="card-body">
+  
+     <h6 class="h6 text-space @@showHideEyebrow mb-10">@@eyebrow</h6>
+     <h5 class="card-title  @@showHideTitle mb-4 h3">@@cardTitle</h5>
+    <p class="card-text-small Body-xl mb-10">@@cardDescription</p>
+
+    @@include('../button/button.html',{
+      "text":"@@btnText",
+      "btnCategory":"@@btnCategory",
+    }) 
+    
+  </div>
+</div>
+
+
+

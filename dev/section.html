@@ -12,6 +12,7 @@
                             <div class="row">
                                 <div class="col">
                                     <h1>Hero sections</h1>
+                                    @@include('includes/modules/section/herosection.html')
                                 </div>
                             </div>
                         </div>
@@ -20,6 +21,59 @@
                     <div class="container">
                         <div class="row">
                             <div class="col">Homepage</div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                @@include('includes/modules/cards/card-a01.html', {
+                                    "padding":"p-4",
+                                    "eyebrow" : "about us",
+                                    "marginEyebrow":"mb-4",
+                                    "cardTitle" : "This is card demo",
+                                    "marginTitle":"mb-4",
+                                    "showHideTitle":"d-block",
+                                    "date": "2022-1-10",
+                                    "showHideDate":"d-block",
+                                    "marginDate":"mb-4",
+                                    "cardDescriptionLarge":" i am card description i am card description i am card description",
+                                    "showHideLarge":"d-block",
+                                    "marginDescriptionLarge":"mb-4",
+                                    "cardDescriptionSmall":" i am card description i am card description i am card description",
+                                    "showHideSmall":"d-block",
+                                    "marginDescriptionSmal":"mb-4",
+                                    "btnText": "Learn more",
+                                    "showHideBtn":"d-inline-block",
+                                    "showHideArrow":"d-flex justify-content-center align-items-center"
+                                    
+                                    
+                                })
+                            </div>
+                            <div class="col">
+                                @@include('includes/modules/cards/card-a01.html', {
+                                    "padding":"p-8",
+                                    "eyebrow" : "about us",
+                                    "marginEyebrow":"mb-4",
+                                    "cardTitle" : "This is card demo",
+                                    "marginTitle":"mb-4",
+                                    "showHideTitle":"d-block",
+                                    "date": "2022-1-10",
+                                    "showHideDate":"d-block",
+                                    "marginDate":"mb-4",
+                                    "cardDescriptionLarge":" i am card description i am card description i am card description",
+                                    "showHideLarge":"d-block",
+                                    "marginDescriptionLarge":"mb-4",
+                                    "cardDescriptionSmall":" i am card description i am card description i am card description",
+                                    "showHideSmall":"d-block",
+                                    "marginDescriptionSmal":"mb-4",
+                                    "btnText": "Learn more",
+                                    "showHideBtn":"d-inline-block",
+                                    "showHideArrow":"d-flex justify-content-center align-items-center"
+                                    
+                                    
+                                })
+                            </div>
                         </div>
                     </div>
                 </main>

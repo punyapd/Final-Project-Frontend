@@ -13,6 +13,8 @@
 
 
 // 3. Layout & components
+// @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
 @import '../../node_modules/bootstrap/scss/root';
 @import '../../node_modules/bootstrap/scss/reboot';
 @import '../../node_modules/bootstrap/scss/type';
@@ -26,6 +28,7 @@
 @import '../../node_modules/bootstrap/scss/buttons';
 @import '../../node_modules/bootstrap/scss/button-group';
 @import '../../node_modules/bootstrap/scss/modal';
+@import '../../node_modules/bootstrap/scss/offcanvas';
 
 
 // 4. Helpers

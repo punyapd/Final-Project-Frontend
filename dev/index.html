@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        @@include('includes/head.html',{'pageTitle':'Home'})
-    </head>
-    <body>
-        <!-- header start -->
-         <!-- navbar  -->
 
-         @@include('includes/navbar.html')
-    </body>
+<head>
+    @@include('includes/head.html',{'pageTitle':'Home'})
+</head>
+
+<body>
+    <!-- header start -->
+    @@include('includes/navbar.html')
+    <main class="theme-main">
+        <!-- herosection start -->
+        @@include('includes/modules/section/herosection.html')
+
+        <!-- about us -->
+        @@include('includes/modules/section/about-section.html',{
+            "padding":"py-md-10"
+        })
+      
+
+
+        <!-- Things to remember -->
+        @@include('includes/modules/section/section-with-article.html',{
+            "eyebrow":"Things to remember",
+            "cardTitle":"Proin pretium risus suscipit viverra mattis. Aliquam non nunc ligula.",
+            "cardDescription":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+            "btnText":"More Articles",
+            "imgSrc":"../../../images/chill.png"
+        })
+
+          <!-- blogs -->
+          @@include('includes/modules/section/blogs-section.html')
+
+
+           <!-- more info -->
+        @@include('includes/modules/section/section-with-article.html',{
+            "eyebrow":"more info",
+            "cardTitle":"Proin pretium risus suscipit viverra mattis. Aliquam non nunc ligula.",
+            "cardDescription":"There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+            "btnText":"More Articles",
+            "imgSrc":"../../../images/girl.jpeg",
+        })
+
+        <!-- testimonials -->
+        @@include("includes/modules/testimonials/testimonial.html")
+
+        <!--see our blogs  -->
+       
+        @@include("includes/modules/section/section-see-our-blogs.html")
+
+
+          <!-- footer -->
+        @@include("includes/footer.html")
+
+    </main>
+    <!-- include script for js -->
+    @@include('includes/scripts.html')
+
+    <!-- main section -->
+
+</body>
+
 </html>

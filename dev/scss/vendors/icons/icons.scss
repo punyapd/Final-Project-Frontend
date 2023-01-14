@@ -1,12 +1,15 @@
-@import "variables";
+@import "variables/variables";
+
+
+
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?j6i2xd');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?j6i2xd#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?j6i2xd') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?j6i2xd') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?j6i2xd##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?fc5bd9');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?fc5bd9#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?fc5bd9') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?fc5bd9') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?fc5bd9##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,44 +30,83 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-Vector {
+.icon-location {
   &:before {
-    content: $icon-Vector; 
+    content: $icon-location; 
   }
 }
-.icon-Vector-1 {
+.icon-menu {
   &:before {
-    content: $icon-Vector-1; 
+    content: $icon-menu; 
   }
 }
-.icon-Vector-2 {
+.icon-arrow45 {
   &:before {
-    content: $icon-Vector-2; 
+    content: $icon-arrow45; 
   }
 }
-.icon-Vector-3 {
+.icon-arrow-up {
   &:before {
-    content: $icon-Vector-3; 
+    content: $icon-arrow-up; 
   }
 }
-.icon-Vector-4 {
+.icon-arrow-right {
   &:before {
-    content: $icon-Vector-4; 
+    content: $icon-arrow-right; 
   }
 }
-.icon-Vector-5 {
+.icon-arrow-down {
   &:before {
-    content: $icon-Vector-5; 
+    content: $icon-arrow-down; 
   }
 }
-.icon-Vector-6 {
+.icon-arrow-left {
   &:before {
-    content: $icon-Vector-6; 
+    content: $icon-arrow-left; 
   }
 }
-.icon-Vector-Stroke {
+.icon-small-arrow-up {
   &:before {
-    content: $icon-Vector-Stroke; 
+    content: $icon-small-arrow-up; 
   }
 }
-
+.icon-small-arrow-right {
+  &:before {
+    content: $icon-small-arrow-right; 
+  }
+}
+.icon-small-arrow-down {
+  &:before {
+    content: $icon-small-arrow-down; 
+  }
+}
+.icon-linkedin {
+  &:before {
+    content: $icon-linkedin; 
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter; 
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook; 
+  }
+}
+.icon-github {
+  &:before {
+    content: $icon-github; 
+  }
+}
+.icon-refresh {
+  &:before {
+    content: $icon-refresh; 
+  }
+}
+.icon-cross {
+  &:before {
+    content: $icon-cross; 
+  }
+}

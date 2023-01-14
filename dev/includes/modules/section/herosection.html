@@ -1,0 +1,39 @@
+<section class="hero-section bg-blush py-8 py-md-10 py-xl-20">
+    <div class="container">
+        @@include("../above-the-fold/image-section.html",{ "orderFirst":"order-1", "orderSecond":"order-2" })
+        <div class="row mt-6 mt-md-10 mt-xl-18 hero-section__card">
+            <div class="col-12 col-md-8 d-md-none">
+                @@include("../cards/card-a03.html",{
+                "padding":"px-6 py-10",
+                "borderTop":"border-top border-8 border-primary",
+                "cardTitle" : "From the depths of the Earth to outer space, we are building the barely possible.",
+                "cardDescription":"First Mode is a creative engineering company meeting humanity’s challenges and opportunities—wherever we find them.",
+                "showHideArrow":"d-flex justify-content-center align-items-center",
+                "showHideBtn":"d-none",
+                "bgColorCard":"white"
+                })
+            </div>
+            <!-- contact us look deep into nature -->
+            <div class="col-12 col-xl-8 d-none d-md-block hero-section__card">
+                @@include("../cards/card-a03.html",{
+                "padding":"p-10 p-xl-20",
+                "borderTop":"border-top border-8 border-primary",
+                "cardTitle" : "Look deep into nature, and then you will understand everything better.",
+                "cardDescription":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+                "btnCategory":"btn-outline-space",
+                "btnText":"Contact Us",
+                "bgColorCard":"white",
+                "showHideBtn":"",
+
+                })
+
+
+            </div>
+            <div class="col-xl-4 d-none d-xl-block hero-section__image">
+                <figure class="  hero-section__image--item">
+                    <img src="../../../images/beatuiful_home.png" class="object-fit h-100 w-100" alt="beatuiful home" loading = "lazy" >
+                </figure>
+            </div>
+        </div>
+    </div>
+</section>

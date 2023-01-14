@@ -8,6 +8,8 @@ import 'bootstrap/js/dist/modal';
 // import 'bootstrap-select';
 // import 'bootstrap/js/dist/modal';
 
+//offcanavas
+import 'bootstrap/js/dist/offcanvas'
 
 class global {
     constructor() {

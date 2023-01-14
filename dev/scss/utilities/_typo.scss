@@ -11,14 +11,22 @@ h6,
     @extend %heading;
 }
 
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 h1,
 .h1,
 .display-1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     line-height: 4rem;
-
     @include media-breakpoint-up(xl) {
-        font-size: 6.4rem;
+        font-size: 5.5rem;
         line-height: 6.4rem;
     }
 }
@@ -26,66 +34,105 @@ h1,
 h2,
 .h2 {
     font-size: 2.8rem;
-    line-height: 2.8rem;
+    line-height: 3.22rem;
+    letter-spacing: -0.02em;
+    color: $space;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
     @include media-breakpoint-up(xl) {
         font-size: 4.4rem;
-        line-height: 4.4rem;
+        line-height: 5.06rem;
+        color: $space;
+        letter-spacing: -0.02em;
+
     }
 }
 
 h3,
 .h3 {
-    font-size: 2.6rem;
-    line-height: 2.6rem;
+    font-size: 2.4rem;
+    line-height: 2.76rem;
+    font-weight: 400;
+    letter-spacing: -0.02em;
     @include media-breakpoint-up(xl) {
-        font-size: 3.6rem;
-        line-height: 3.6rem;
+        font-size: 3.5rem;
+        line-height: 3.5rem;
     }
 }
 
 h4,
 .h4 {
-    font-size: 2.4rem;
-    line-height: 2.4rem;
+    font-size: 2rem;
+    line-height: 2rem;
     @include media-breakpoint-up(xl) {
-        font-size: 3rem;
-        line-height: 3rem;
-    }
-}
-
-h5,
-.h5,
-.body-1,
-body {
-    font-size: 2.2rem;
-    line-height: 2.3rem;
-    @include media-breakpoint-up(xl) {
-        font-size: 2.6rem;
+        font-size: 2.8rem;
         line-height: 2.8rem;
     }
 }
 
-h6,
-.h6 {
-    font-size: 1.6rem;
-    line-height: 2rem;
+h5,
+.h5
+ {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight:500;
+    font-family: 'Inter', sans-serif;
     @include media-breakpoint-up(xl) {
-        font-size: 2rem;
-        line-height: 2.4rem;
+        font-size: 2.3rem;
+        line-height: 2.3rem;
     }
 }
 
-.eyebrow {
-    font-size: 1.4rem;
-    line-height: 1;
-    &-1 {
-        @include media-breakpoint-up(md) {
-            font-size: 1.6rem;
-        }
+h6,
+.h6  .eyebrow{
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    @include media-breakpoint-up(xl) {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+}
+
+}
+
+.Body{
+    font-size:1.6rem;
+    line-height:1.1;
+     font-family: 'Inter', sans-serif;
+     @include media-breakpoint-up(xl) {
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+}
+    &-xl{
+        font-size:2.3rem;
+        line-height:3.22rem;
+        color:$space;
+    font-family: 'Inter', sans-serif;
+
         @include media-breakpoint-up(xl) {
-            font-size: 2rem;
-        }
+            font-size: 2.8rem;
+            line-height: 2.8rem;
     }
+    }
+    &-l{
+        font-size:2rem;
+        line-height:2rem;
+         font-family: 'Inter', sans-serif;
+         @include media-breakpoint-up(xl) {
+            font-size: 2.3rem;
+            line-height: 2.3rem;
+    }
+    }
+    
+}
+
+.caption{
+    font-size:1.4rem;
+    font-family: 'Inter', sans-serif;
+    font-weight:500;
 }
 
 .quote {
@@ -113,3 +160,5 @@ a {
     text-decoration: none;
     @extend .transition-fast;
 }
+
+

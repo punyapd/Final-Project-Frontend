@@ -51,6 +51,7 @@ $sky:     #325288 !default;
 $mint:    #f4fef3 !default;
 $peach:   #f5cebe !default;
 $blush:   #f4eee8 !default;
+$lightmint: #eaefed;
 
 // scss-docs-end color-variables
 
@@ -70,7 +71,9 @@ $colors: (
   "white":      $white,
   "gray":       $gray-600,
   "gray-dark":  $gray-800,
-  "space":$space
+  "space":      $space,
+  "blush":      $blush,
+  "lightmint":  $lightmint,
 ) !default;
 // scss-docs-end colors-map
 
@@ -313,6 +316,11 @@ $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+$teal:          $teal    !default;
+$blush:         $blush    !default;
+$space:         $space;
+$mint:          $mint;
+$lightmint:  $lightmint;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -325,7 +333,11 @@ $theme-colors: (
   "danger":     $danger,
   "light":      $light,
   "dark":       $dark,
-  "space":      $space
+  "space":      $space,
+  "teal":       $teal,
+  "blush":      $blush,
+  "mint":       $mint,
+  "lightmint":  $lightmint,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -384,35 +396,35 @@ $spacers: (
   0: 0,
   1: $spacer * .4,
   2: $spacer * .8,
-  3: $spacer *1.2
+  3: $spacer *1.2,
   4: $spacer * 1.6,
   5: $spacer * 2,
   6: $spacer * 2.4,
   7: $spacer * 2.8,
-  8: $spacer *3.2
+  8: $spacer *3.2,
   9: $spacer * 3.6,
   10: $spacer * 4,
   11: $spacer * 4.4,
   12: $spacer * 4.8,
-  13: $spacer *5.2
+  13: $spacer *5.2,
   14: $spacer * 5.6,
   15: $spacer * 6,
   16: $spacer * 6.4,
   17: $spacer * 6.8,
-  18: $spacer *7.2
+  18: $spacer *7.2,
   19: $spacer * 7.6,
   20: $spacer * 8,
   21: $spacer * 8.4,
   22: $spacer * 8.8,
-  23: $spacer *9.2
+  23: $spacer *9.2,
   24: $spacer * 9.6,
   25: $spacer * 10,
   26: $spacer * 10.4,
   27: $spacer * 10.8,
   28: $spacer *11.2,
   29: $spacer * 11.6,
-  30: $spacer * 120,
-
+  30: $spacer * 12,
+  40:$spacer * 16
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -466,7 +478,7 @@ $grid-breakpoints: (
   xs: 0,
   md: 768px,
   xl: 1100px,
-  xxl: 1441px
+  xxl: 1440px
 ) !default;
 // scss-docs-end grid-breakpoints
 
@@ -480,10 +492,11 @@ $grid-breakpoints: (
 
 // scss-docs-start container-max-widths
 $container-max-widths: (
-  xs: 767px,
-  md: 1099px,
-  xl: 1440px,
-  xxl: 1320px
+  xs: 719px,
+  md: 1019px,
+  xl: 1280px,
+  xxl: 1680px
+ 
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -500,7 +513,7 @@ $grid-row-columns:            6 !default;
 
 // Container padding
 
-$container-padding-x: $grid-gutter-width !default;
+$container-padding-x: $grid-gutter-width*0.5 !default;
 
 
 // Components
@@ -514,7 +527,8 @@ $border-widths: (
   2: 2px,
   3: 3px,
   4: 4px,
-  5: 5px
+  5: 5px,
+  8: 8px,
 ) !default;
 
 $border-style:                solid !default;
@@ -560,7 +574,11 @@ $aspect-ratios: (
   "1x1": 100%,
   "4x3": calc(3 / 4 * 100%),
   "16x9": calc(9 / 16 * 100%),
-  "21x9": calc(9 / 21 * 100%)
+  "21x9": calc(9 / 21 * 100%),
+  "394x287":calc(233/394 * 100%),
+  "279x238":calc(238/279 *100%),
+  "404x276":calc(276/404 *100%),
+  "462x276":calc(276/462 *100%),
 ) !default;
 // scss-docs-end aspect-ratios
 // stylelint-enable function-disallowed-list
@@ -580,7 +598,7 @@ $font-family-code:            var(--#{$prefix}font-monospace) !default;
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
 // $font-size-base affects the font size of the body text
 $font-size-root:              null !default;
-$font-size-base:              10px !default; // Assumes the browser default, typically `16px`
+$font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $font-size-sm:                $font-size-base * .875 !default;
 $font-size-lg:                $font-size-base * 1.25 !default;
 
@@ -632,7 +650,9 @@ $display-font-sizes: (
   3: 4rem,
   4: 3.5rem,
   5: 3rem,
-  6: 2.5rem
+  6: 2.5rem,
+  7:1.2rem,
+
 ) !default;
 
 $display-font-family: null !default;
@@ -1664,15 +1684,5 @@ $nested-kbd-font-weight:            null !default; // Deprecated in v5.2.0, remo
 
 $pre-color:                         null !default;
 
-$icomoon-font-family: "icomoon" !default;
-$icomoon-font-path: "fonts" !default;
 
-$icon-Vector: "\e900";
-$icon-Vector-1: "\e901";
-$icon-Vector-2: "\e902";
-$icon-Vector-3: "\e903";
-$icon-Vector-4: "\e904";
-$icon-Vector-5: "\e905";
-$icon-Vector-6: "\e906";
-$icon-Vector-Stroke: "\e907";
 

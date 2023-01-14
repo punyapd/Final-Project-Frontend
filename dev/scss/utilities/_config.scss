@@ -5,7 +5,7 @@ html {
 html,
 body {
     height: auto;
-    font-size: 10px;
+    font-size: 10px; // 1 rem is defined here
     position: relative;
     -webkit-overflow-scrolling: touch;
     // Makes the smooth scrolling on ios devices
@@ -42,30 +42,21 @@ button,
 }
 
 p {
-    margin-bottom: 3.2rem;
-
+    // margin-bottom: 3.2rem;
+    color:$space;
     &:last-child {
         @extend .mb-0;
     }
 }
 
-ul,
-ol {
-    padding-left: 2rem;
-
-    > li {
-        padding-left: .4rem;
-        margin-bottom: 1rem;
-
-        &:last-child {
-            margin-bottom: 0;
-        }
-
-        &::marker {
-            color: $primary;
-        }
+ul{
+    padding:0;
+    li{
+        padding:0;
     }
 }
+
+
 
 b,
 strong {
