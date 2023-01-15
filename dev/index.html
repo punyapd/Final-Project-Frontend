@@ -10,7 +10,24 @@
     @@include('includes/navbar.html')
     <main class="theme-main">
         <!-- herosection start -->
-        @@include('includes/modules/section/herosection.html')
+        @@include('includes/modules/section/herosection.html',{
+            "imgSrc1":"../../../images/skywithcloud.png",
+            "imgSrc2":"../../../images/boat.png",
+            "imgSrc3":"../../../images/beatuiful_home.png",
+            "colReverse":" ",
+            "padding":"p-10 p-xl-20",
+            "borderTop":"border-top border-8 border-primary",
+            "cardTitle" : "Look deep into nature, and then you will understand everything better.",
+            "cardDescription":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+            "btnCategory":"btn-outline-space",
+            "btnText":"Contact Us",
+            "bgColorCard":"bg-white",
+            "showHideBtn":"",
+            "textColor":"",
+            "cardTitleMobile":"From the depths of the Earth to outer space, we are building the barely possible. ",
+            "cardDescriptionMobile":"First Mode is a creative engineering company meeting humanity&#39;s challenges and opportunities—wherever we find them.",
+            
+        })
 
         <!-- about us -->
         @@include('includes/modules/section/about-section.html',{

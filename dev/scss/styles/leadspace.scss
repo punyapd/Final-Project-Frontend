@@ -3,33 +3,42 @@
 .hero-section{
     &__image{
         &--item{
-             width:27.6rem;
-             height:27.6rem;
+             width:37.6rem;
+             height:37.6rem;
         }
     }
 }
 
-.leadspace {
-    &-item1 {
-        &__image {
-            max-width: 32.7rem;
-            height:39.7rem;
-            @include media-breakpoint-up(md) {
-                max-width: 39.4rem;
-            }
-            @include media-breakpoint-up(xl) {
-                max-width: 48.6rem;
-            }
-        }
-    }
 
-    &-item2 {
-        &__image {
-            max-width: 50.96rem;
-            height:39.7rem;
-            @include media-breakpoint-up(xl) {
-                max-width: 75.4rem;
-            }
-        }
+.leadspace{
+   &-item2{
+    display: none;
+    @include media-breakpoint-up(md){
+        display: block;
     }
+   }
 }
+// .leadspace {
+//     &-item1 {
+//         &__image {
+//             max-width: 32.7rem;
+//             height:39.7rem;
+//             @include media-breakpoint-up(md) {
+//                 max-width: 39.4rem;
+//             }
+//             @include media-breakpoint-up(xl) {
+//                 max-width: 48.6rem;
+//             }
+//         }
+//     }
+
+//     &-item2 {
+//         &__image {
+//             max-width: 50.96rem;
+//             height:39.7rem;
+//             @include media-breakpoint-up(xl) {
+//                 max-width: 75.4rem;
+//             }
+//         }
+//     }
+// }

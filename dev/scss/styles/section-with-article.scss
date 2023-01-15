@@ -1,0 +1,7 @@
+.section-with-article{
+    &__image{
+        &--shadow{
+            filter:drop-shadow(8px 8px 0px #F5CEBE);
+        }
+    }
+}

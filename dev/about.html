@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'About'})
+</head>
+
+<body>
+    <!-- header start -->
+    @@include('includes/navbar.html')
+    <main class="theme-main">
+        <!-- herosection start -->
+        @@include('includes/modules/section/herosection.html',{
+            "imgSrc1":"../../../images/leadspace-sunset.jpeg",
+            "imgSrc2":"../../../images/leadspace-ocean.jpeg",
+            "imgSrc3":"../../../images/hero2.jpeg",
+            "colReverse":"flex-md-row-reverse ",
+            "padding":"p-10 p-xl-20",
+            "borderTop":"border-top border-8 border-space",
+            "cardTitle" : "Look deep into nature, and then you will understand everything better.",
+            "cardDescription":"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+            "btnCategory":"btn-outline-light",
+            "btnText":"Contact Us",
+            "bgColorCard":"bg-primary",
+            "showHideBtn":"",
+            "textColor":"text-light",
+            "displayXS":"d-none",
+            "displayMD":"d-md-block",
+            "displayXS1":"d-block ",
+            "displayMD1":"",
+            "cardDescriptionMobile":"<p>The First Mode team thrives at the intersection of industry and technology. Every day, we create new approaches to unique problems through iterative analysis and boundless imagination.<p>First Mode people are entrepreneurial, visionary, and multi-faceted, and our teams bring their full selves to the table for a truly collaborative experience.</p></p>",
+            "cardTitleMobile":"Our people make the difference"
+        })
+ 
+            <!-- about us services section -->
+             @@include('includes/modules/section/services-section.html')
+       
+
+    </main>
+    <!-- footer  -->
+    @@include('includes/footer.html')
+    <!-- include script for js -->
+    @@include('includes/scripts.html')
+
+    <!-- main section -->
+
+</body>
+
+</html>
