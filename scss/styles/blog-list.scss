@@ -1,0 +1,40 @@
+@import '../common-imports';
+
+.dropdown {
+    
+    position:relative;
+    &-menu {
+        &.show{
+            background-color: red;
+        }
+        background-color: White;
+        width: 100vw;
+        position: absolute;
+        left: 0;
+        top:2rem;
+        opacity: 1;
+        border: none;
+
+        @include media-breakpoint-up(md){
+           width:30rem;
+           left:30rem;
+           top:2rem;
+           height:auto;
+        }
+    }
+
+    &-item {
+        background-color: $mint;
+        border-bottom: 1px outset $space;
+        padding:1.5rem 2rem;
+    }
+}
+
+
+.shadow-blush{
+    box-shadow: 8px 8px 0px #F4EEE8;
+}
+
+.shadow-peach{
+    box-shadow: 8px 8px 0px #F5CEBE;
+}

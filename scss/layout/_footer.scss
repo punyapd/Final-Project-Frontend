@@ -1,0 +1,25 @@
+.footer {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.7rem;
+    font-family: 'Inter', sans-serif;
+
+    &__details {
+        &__newsletter {
+            &__input {
+                @include media-breakpoint-between(md , xl){
+                    flex-basis: 70%;
+                }
+                input {
+                    border:1px solid #fff;
+                    &:focus {
+                        outline: none;
+                    }
+                    &::placeholder{
+                        color:white;
+                    }
+                }
+            }
+        }
+    }
+}

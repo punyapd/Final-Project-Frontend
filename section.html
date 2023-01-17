@@ -1,5 +1,84 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content=""><meta name="author" content=""><title>Sections</title><link rel="icon" href="favicon.ico"><link rel="stylesheet" href="css/app.min.css?v=2020"><!-- google fonts inter --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap&v=e7300ad802c9a580f6df17eaa37fa044" rel="stylesheet"><link rel="stylesheet" href="css/design.min.css?v=2020"><!-- link swiper js --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css?v=e7300ad802c9a580f6df17eaa37fa044"><!-- <link rel="preload" as="font" href="fonts/FoundersGrotesk-Bold.woff" type="font/woff" crossorigin="anonymous" /> --><link rel="preload" as="font" href="fonts/FoundersGroteskBold.woff2" type="font/woff2" crossorigin="anonymous"><link rel="preload" as="font" href="fonts/FoundersGroteskLight.woff2" type="font/woff2" crossorigin="anonymous"><link rel="preload" as="font" href="fonts/FoundersGroteskMedium.woff2" type="font/woff2" crossorigin="anonymous"><link rel="preload" as="font" href="fonts/FoundersGroteskRegular.woff2" type="font/woff2" crossorigin="anonymous"><link rel="preload" as="font" href="fonts/FoundersGroteskSemibold.woff2" type="font/woff2" crossorigin="anonymous"></head><body><div class="theme-app d-flex flex-column"><div class="theme-wrap position-relative"><main class="theme-main"><header class="mb-5 py-3"><div class="container"><div class="row"><div class="col"><h1>Hero sections</h1><section class="hero-section bg-blush py-8 py-md-10 py-xl-20"><div class="container"><div class="leadspace row @@colReverse"><div class="@@displayXS @@displayMD col-12 col-md-5 leadspace-item1"><figure class="leadspace-item1__image ratio ratio-327x234 h-100"><img src="@@imgSrc1" class="w-100 h-100 object-fit" alt="herosection-image-one" loading="lazy"></figure></div><div class="@@displayXS1 @@diplayMD1 col-md-7 leadspace-item2"><figure class="leadspace-item2__image ratio ratio-327x234"><img src="@@imgSrc2" class="w-100 object-fit-contain" alt="herosection-image-two" loading="lazy"></figure></div></div><!-- mobile only card --><div class="hero-section__card--mobile row mt-6 mt-md-10 mt-xl-18 justify-content-between @@colReverse"><div class="col-12 d-md-none"><div class="card h-100 px-6 py-10 @@borderTop @@bgColorCard"><div class="card-body"><h5 class="card-title mb-4 h2 @@textColor">@@cardTitleMobile</h5><div class="card-text-small Body-xl mb-4 @@textColor">@@cardDescriptionMobile</div><a href="#"><button class="btn d-none @@btnCategory px-4 py-2 fw-bold cursor-pointer">@@btnText <i class="icon-arrow-right ms-1 @@showHideArrow"></i></button></a></div></div></div><!-- contact us look deep into nature --><div class="hero-section__card--desktop col-12 col-xl-8 d-none d-md-block"><div class="card h-100 @@padding @@borderTop @@bgColorCard"><div class="card-body"><h5 class="card-title mb-4 h2 @@textColor">@@cardTitle</h5><div class="card-text-small Body-xl mb-4 @@textColor">@@cardDescription</div><a href="#"><button class="btn @@btnCategory px-4 py-2 fw-bold cursor-pointer">Contact Us <i class="icon-arrow-right ms-1 @@showHideArrow"></i></button></a></div></div></div><div class="col-xl-4 d-none d-xl-block hero-section__image"><figure class="hero-section__image--item ratio ratio-1x1"><img src="@@imgSrc3" class="object-fit h-100 w-100" alt="beatuiful home" loading="lazy"></figure></div></div></div></section></div></div></div></header><div class="container"><div class="row"><div class="col">Homepage</div></div></div><div class="container"><div class="row"><div class="col"><div class="card h-100 py-md-10 p-4 @@borderTop bg-@@bgColorCard"><div class="card-body"><h6 class="h6 text-space @@showHideEyebrow mb-10">about us</h6><h5 class="card-title d-block mb-4 h3">This is card demo</h5><p class="card-text-small Body-xl mb-10">@@cardDescription</p><a href="#"><button class="btn @@showHideBtn @@btnCategory px-4 py-2 fw-bold cursor-pointer">Learn more <i class="icon-arrow-right ms-1 @@showHideArrow"></i></button></a></div></div></div><div class="col"><div class="card h-100 py-md-10 p-8 @@borderTop bg-@@bgColorCard"><div class="card-body"><h6 class="h6 text-space @@showHideEyebrow mb-10">about us</h6><h5 class="card-title d-block mb-4 h3">This is card demo</h5><p class="card-text-small Body-xl mb-10">@@cardDescription</p><a href="#"><button class="btn @@showHideBtn @@btnCategory px-4 py-2 fw-bold cursor-pointer">Learn more <i class="icon-arrow-right ms-1 @@showHideArrow"></i></button></a></div></div></div></div></div></main></div><script type="text/javascript" src="scripts/app.js?v=212002"></script><!-- <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"
-></script> --></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      @@include('includes/head.html',{'pageTitle':'Sections'})
+    </head>
+    <body>
+        <div class="theme-app d-flex flex-column">
+            <div class="theme-wrap position-relative">
+                <main class="theme-main">
+                    <header class="mb-5 py-3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <h1>Hero sections</h1>
+                                    @@include('includes/modules/section/herosection.html')
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">Homepage</div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                @@include('includes/modules/cards/card-a01.html', {
+                                    "padding":"p-4",
+                                    "eyebrow" : "about us",
+                                    "marginEyebrow":"mb-4",
+                                    "cardTitle" : "This is card demo",
+                                    "marginTitle":"mb-4",
+                                    "showHideTitle":"d-block",
+                                    "date": "2022-1-10",
+                                    "showHideDate":"d-block",
+                                    "marginDate":"mb-4",
+                                    "cardDescriptionLarge":" i am card description i am card description i am card description",
+                                    "showHideLarge":"d-block",
+                                    "marginDescriptionLarge":"mb-4",
+                                    "cardDescriptionSmall":" i am card description i am card description i am card description",
+                                    "showHideSmall":"d-block",
+                                    "marginDescriptionSmal":"mb-4",
+                                    "btnText": "Learn more",
+                                    "showHideBtn":"d-inline-block",
+                                    "showHideArrow":"d-flex justify-content-center align-items-center"
+                                    
+                                    
+                                })
+                            </div>
+                            <div class="col">
+                                @@include('includes/modules/cards/card-a01.html', {
+                                    "padding":"p-8",
+                                    "eyebrow" : "about us",
+                                    "marginEyebrow":"mb-4",
+                                    "cardTitle" : "This is card demo",
+                                    "marginTitle":"mb-4",
+                                    "showHideTitle":"d-block",
+                                    "date": "2022-1-10",
+                                    "showHideDate":"d-block",
+                                    "marginDate":"mb-4",
+                                    "cardDescriptionLarge":" i am card description i am card description i am card description",
+                                    "showHideLarge":"d-block",
+                                    "marginDescriptionLarge":"mb-4",
+                                    "cardDescriptionSmall":" i am card description i am card description i am card description",
+                                    "showHideSmall":"d-block",
+                                    "marginDescriptionSmal":"mb-4",
+                                    "btnText": "Learn more",
+                                    "showHideBtn":"d-inline-block",
+                                    "showHideArrow":"d-flex justify-content-center align-items-center"
+                                    
+                                    
+                                })
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            @@include('includes/scripts.html')
+        </div>
+    </body>
+</html>

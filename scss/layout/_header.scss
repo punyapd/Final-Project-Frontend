@@ -1,0 +1,69 @@
+.#{$global} {
+    &-header {
+        background: $white;
+    }
+}
+
+.navbar__logo {
+    width: 15.33rem;
+    height: 7rem;
+    @include media-breakpoint-up(xl) {
+        width: 27.162rem;
+        height: 12.4rem;
+    }
+}
+.navbar-toggler {
+    border: none;
+
+&.navbar-toggler-icon {
+    background-image: url('../../images/Menu.svg');
+    border: 0px;
+}
+&:focus {
+    outline: 0;
+    box-shadow: none;
+}
+}
+.offcanvas {
+    &-header {
+        border: 1px solid $peach;
+       
+    }
+
+    & .nav-link {
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 2.3rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        
+            &:hover{
+              color:$teal;
+            }
+
+        
+    }
+}
+
+.offcanvas-backdrop,
+.modal-backdrop {
+    display: none;
+}
+
+//desktop nav menu
+.navigation-menu {
+    & .nav-link {
+        color: black;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 150%;
+    }
+}
+
+
+//button
+.btn{
+    font-family: 'Inter', sans-serif;
+    font-size:1.6rem;
+}

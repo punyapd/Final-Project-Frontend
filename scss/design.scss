@@ -1,0 +1,26 @@
+@import './common-imports';
+
+// Leadspace
+@import './styles/leadspace';
+
+//button
+@import "./modules/buttons";
+
+//testimonials
+@import 'testimonials/testimonials.scss';
+
+//bloglist herosection
+@import 'styles/bloglist-herosection.scss';
+
+//section-with-article
+@import 'styles/section-with-article.scss';
+
+//services  
+@import 'styles/services-section.scss';
+
+
+//blog-list
+@import 'styles/blog-list.scss';
+
+//blog-single
+@import 'styles/blog-single-details.scss';
