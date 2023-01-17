@@ -1,0 +1,2 @@
+.blog-single-details__list li{list-style-type:disc}@media(min-width:768px){.blog-single-details__image{-webkit-filter:drop-shadow(8px 8px 0 #eaefed);filter:drop-shadow(8px 8px 0 #eaefed)}}@media(min-width:768px){.blog-single-details__image::before{--bs-aspect-ratio:47%}}.blog-single-details__image--caption{background-color:#f4fef3}@media(min-width:768px){.blog-single-details__image--caption{background-color:rgba(0,0,0,0)}}
+/*# sourceMappingURL=maps/blog-single-details.min.css.map */
