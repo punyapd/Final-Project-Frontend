@@ -51,7 +51,7 @@ h2,
 h3,
 .h3 {
     font-size: 2.4rem;
-    line-height: 2.76rem;
+    line-height: 2rem;
     font-weight: 400;
     letter-spacing: -0.02em;
     @include media-breakpoint-up(xl) {
@@ -74,12 +74,12 @@ h5,
 .h5
  {
     font-size: 1.8rem;
-    line-height: 1.8rem;
+    line-height: 2rem;
     font-weight:500;
     font-family: 'Inter', sans-serif;
     @include media-breakpoint-up(xl) {
         font-size: 2.3rem;
-        line-height: 2.3rem;
+        line-height: 2rem;
     }
 }
 
@@ -132,6 +132,7 @@ h6,
 .caption{
     font-size:1.4rem;
     font-family: 'Inter', sans-serif;
+    line-height: 2.7rem;
     font-weight:500;
 }
 

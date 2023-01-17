@@ -1,16 +1,14 @@
-import 'popper.js';
+// import 'popper.js';
 // import 'bootstrap/js/dist/button';
-import 'bootstrap/js/dist/modal';
-// import 'bootstrap/js/dist/dropdown';
 // import 'bootstrap/js/dist/modal';
+// import 'bootstrap/js/dist/dropdown';
 // import 'bootstrap/js/dist/tab';
 // import 'bootstrap/js/dist/collapse';
 // import 'bootstrap-select';
-// import 'bootstrap/js/dist/modal';
 
-//offcanavas
-import 'bootstrap/js/dist/offcanvas'
-
+// //offcanavas
+// import 'bootstrap/js/dist/offcanvas'
+import 'bootstrap/dist/js/bootstrap'
 class global {
     constructor() {
         this.myModal = document.getElementById('exampleModal')

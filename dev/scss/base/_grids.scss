@@ -1,7 +1,5 @@
 .container {
-    .row{
-        --bs-gutter-x:0rem;
-    }
+   
     @include media-breakpoint-down(xxl) {
         // padding-left: 12rem;
         // padding-right: 12rem;

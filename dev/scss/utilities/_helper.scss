@@ -186,12 +186,19 @@
     &-100-vw {
         width: 100vw !important;
     }
+
+    &-50{
+        width:4rem !important;
+    }
 }
 
 // height Variations
 .h {
     &-100-vh {
         height: 100vh !important;
+    }
+    &-50{
+        height:4rem !important;
     }
 }
 

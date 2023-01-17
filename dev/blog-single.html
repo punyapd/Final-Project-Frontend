@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('includes/head.html',{'pageTitle':'Blogs'})
+</head>
+
+<body>
+    <!-- header start -->
+    @@include('includes/navbar.html')
+
+    <!-- Herosection -->
+    @@include('includes/modules/section/blog-herosection.html',{
+        "imageName":"article1.png",
+        "imageTitle":"bloglist_herosection",
+        "title":"Vivamus vitae finibus dolor. Suspendisse finibus ante in sapien fermentum.",
+        "display":"d-none",
+    })
+
+    <!-- blog single details -->
+    @@include('includes/modules/section/blog-single-details.html')
+
+    <!-- related blogs -->
+     @@include('includes/modules/section/related-blogs.html',{
+        'articleList': {
+            "list": [
+            {
+                'articleImage':'article1.png',
+                'imageTitle':"article1",
+                'shadow':'shadow-blush',
+                'date':'June 11, 2021',
+                'articleTitle': 'Interesting Facts I Bet You Never Knew About BLOGS',
+                'bgColorCard':"bg-white",
+                "display":""
+            },
+            {
+                'articleImage':'article2.png',
+                'imageTitle':'article2',
+                'shadow':"shadow-blush",
+                'date':'June 11, 2021',
+                'bgColorCard':"bg-white",
+                'articleTitle': 'verything You Wanted to Know About BLOGS and Were Too EEmbarrassed to Ask',
+                'display':"",
+            },
+            {
+                'articleImage':'article3.png',
+                'imageTitle':"article3",
+                'shadow':"shadow-blush",
+                'date':'June 11, 2021',
+                'bgColorCard':"bg-white",
+                'articleTitle': 'What Can You Do To Save Your BLOGS From Destruction By Social Media?',
+                'display':"d-md-none d-xl-block"
+            },
+        ]}
+     })
+   
+   
+    
+
+
+    <!-- footer  -->
+     @@include('includes/footer.html')
+     <!-- include script for js -->
+     @@include('includes/scripts.html')
+
+</body>
+</html>
