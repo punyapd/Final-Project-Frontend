@@ -1,0 +1,1 @@
+{"version":3,"sources":["section-with-article.scss"],"names":[],"mappings":"AAEQ,qCACI,6CAAA,CAAA,qCAAA","file":"../section-with-article.min.css","sourcesContent":[".section-with-article{\n    &__image{\n        &--shadow{\n            filter:drop-shadow(8px 8px 0px #F5CEBE);\n        }\n    }\n}"]}
