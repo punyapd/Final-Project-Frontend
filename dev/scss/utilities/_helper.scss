@@ -205,13 +205,19 @@
         height: 6.4rem;
     }
 }
+//border-radius variations
 .rounded{
     &-30{
         border-radius: 3rem;
     }
 }
 
-//border-radius variations
+//z-index variations
+.z{
+    &-5{
+        z-index: 5;
+    }
+}
 
 
 // Text Indention For Hiding

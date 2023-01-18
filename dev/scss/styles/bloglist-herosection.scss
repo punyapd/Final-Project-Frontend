@@ -1,28 +1,29 @@
-
 @import '../common-imports';
-.blog-herosection{
-    
-
-    &__cardblue{
-        &--margintop{
-
-            @include media-breakpoint-up(md){
-               margin-top: -10.7rem;
+.blog-herosection {
+    &__image {
+        &__item {
+            &::before {
+                @include media-breakpoint-up(md) {
+                    --bs-aspect-ratio: 56.16%;
+                }
             }
-            @include media-breakpoint-up(xl){
+        }
+    }
+
+    &__cardblue {
+        &--margintop {
+            @include media-breakpoint-up(md) {
+                margin-top: -10.7rem;
+            }
+            @include media-breakpoint-up(xl) {
                 margin-top: -22rem;
-             }
+            }
         }
     }
 
-
-    &__cardwhite{
-        &--item{
-            box-shadow: 8px 8px 0px #EAEFED;
-
+    &__cardwhite {
+        &--item {
+            box-shadow: 8px 8px 0px #eaefed;
         }
     }
-
-
 }
-
