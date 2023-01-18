@@ -583,6 +583,7 @@ $aspect-ratios: (
   "327x234":calc(234/327*100%), //leadspace image one
   "509x287":calc(287.68/509.6 * 100%),   //leadspace image tow
   "335x201":calc(201 / 335 * 100%),//blog single image
+  "327x245":calc(245/327*100%), //contact us image
 ) !default;
 // scss-docs-end aspect-ratios
 // stylelint-enable function-disallowed-list

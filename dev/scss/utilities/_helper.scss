@@ -200,7 +200,19 @@
     &-50{
         height:4rem !important;
     }
+
+    &-64{
+        height: 6.4rem;
+    }
 }
+.rounded{
+    &-30{
+        border-radius: 3rem;
+    }
+}
+
+//border-radius variations
+
 
 // Text Indention For Hiding
 .text {
@@ -339,4 +351,10 @@ ul {
             display: none;
         }
     }
+}
+
+//shadows
+
+.moon-shadow{
+    box-shadow: 8px 8px 0px #EAEFED;
 }

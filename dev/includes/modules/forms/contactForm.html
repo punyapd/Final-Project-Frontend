@@ -1,0 +1,55 @@
+<section class="contact-form bg-mint">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 mb-6">
+                <form action="#" class="form bg-white moon-shadow p-6 p-md-10 p-xl-20">
+                    <div class="row mb-11">
+                        <div class="col-md-4">
+                            <div class="h5 mb-4">let's talk about</div>
+                            <select class="py-4 ps-4">
+                                <option value="">Project inquiries</option>
+                                <option value="">Careers</option>
+                                <option value="">Media</option>
+                                <option value="">Partnership</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 mb-6 mb-xl-10">
+                            <label for="firstname" class="h6 text-capitalize">First name</label>
+                            <input type="text" id="firstname" class="form-control" placeholder="Jane" required>
+                        </div>
+                        <div class="col-md-5 mb-6 mb-xl-10">
+                            <label for="lastname" class="d-block mb-2 text-space text-capitalize h6">Last name</label>
+                            <input type="text" id="lastname" class="form-control" placeholder="Doe" required>
+                        </div>
+                        <div class="col-md-11 mb-6 mb-xl-10">
+                            <label for="email" class="d-block mb-2 text-space h6 text-capitalize">Email address</label>
+                            <input type="email" id="email" class="form-control" placeholder="jane@domain.com" required>
+                        </div>
+                        <div class="col-md-11  mb-6 mb-xl-10">
+                            <label for="message" class="d-block mb-2 text-space h6 text-capitalize">Message</label>
+                            <input type="text" class="form-control" id="message" placeholder="How can we help?"
+                                required>
+                        </div>
+                        <div class="col-md-10 mb-6 mb-xl-10 caption">
+                            <p>
+                                This site is protected by reCAPTCHA and the Google <a href="#"
+                                    class="text-teal text-decoration-underline me-1">Privacy Policy</a>and <a href="#"
+                                    class="text-teal ms-1 text-decoration-underline">Terms of Service</a> apply.
+                            </p>
+                        </div>
+                        <div class="col-md-8">
+                            @@include('../button/button.html',{
+                            "text":"submit",
+                            "btnCategory":"btn-outline-space",
+
+                            })
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,33 @@
+@import '../common-imports';
+.contact-form {
+    input {
+          height: 5.9rem;
+          border:2px solid $space;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 0;
+          font-size: 2.3rem;
+          @include media-breakpoint-up(md){
+            font-size: 2.8rem;
+            height: 6.4rem;
+        }
+        &:focus{
+            outline: none;
+            box-shadow: none;
+            border-color: $space;
+        }
+        &::placeholder {
+            padding: 1.6rem;
+            font-family: 'Inter', sans-serif;
+            font-style: italic;
+            font-weight: 400;
+            font-size: 2.3rem;
+            line-height: 3.4rem;
+            @include media-breakpoint-up(md){
+                font-size: 2.8rem;
+                line-height: 3.2rem;
+            }
+        }
+    }
+}

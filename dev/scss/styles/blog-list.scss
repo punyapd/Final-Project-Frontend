@@ -1,40 +1,86 @@
 @import '../common-imports';
 
+.blog-cards {
+    &-search {
+        &__input {
+            position: relative;
+
+            input {
+                font-weight: 400;
+                font-size: 2.8rem;
+                line-height: 3.2rem;
+                padding-left: 3rem;
+                border:1px solid $sky;
+                &:focus {
+                    outline: none;
+                }
+               
+            }
+            &__icon{
+                position: absolute;
+                right:6rem;
+                top:2rem;
+                color:$sky;
+            }
+        }
+    }
+}
 .dropdown {
-    
-    position:relative;
+    text-align: right;
+    width: 100vw;
+    margin: 0 -2.4rem !important;
+    @include media-breakpoint-up(md) {
+        margin-right: 0;
+    }
+
     &-menu {
-        &.show{
-            background-color: red;
-        }
-        background-color: White;
-        width: 100vw;
-        position: absolute;
-        left: 0;
-        top:2rem;
-        opacity: 1;
-        border: none;
+        &.show {
+            background-color: $mint;
+            position: relative !important;
+            transform: none !important;
+            border: 1px solid $peach;
+            padding: 1.6rem 2.4rem;
+            @include media-breakpoint-up(md) {
+                position: absolute !important;
+                top: 4rem !important;
+            }
+            li {
+                border-bottom: 1px solid $space;
+                padding: 1.2rem 1.6rem;
 
-        @include media-breakpoint-up(md){
-           width:30rem;
-           left:30rem;
-           top:2rem;
-           height:auto;
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+        }
+
+        // background-color: White;
+        // width: 100vw;
+        // position: absolute;
+        // left: 0;
+        // top:2rem;
+        // opacity: 1;
+        // border: none;
+
+        @include media-breakpoint-up(md) {
+            width: 30rem;
+            left: 30rem;
+            top: 2rem;
+            height: auto;
         }
     }
 
-    &-item {
-        background-color: $mint;
-        border-bottom: 1px outset $space;
-        padding:1.5rem 2rem;
-    }
+    // &-item {
+    //     background-color: $mint;
+    //     border-bottom: 1px outset $space;
+    //     padding:1.5rem 2rem;
+    // }
 }
 
-
-.shadow-blush{
-    box-shadow: 8px 8px 0px #F4EEE8;
+.shadow-blush {
+    box-shadow: 8px 8px 0px #f4eee8;
 }
 
-.shadow-peach{
-    box-shadow: 8px 8px 0px #F5CEBE;
+.shadow-peach {
+    box-shadow: 8px 8px 0px #f5cebe;
 }
