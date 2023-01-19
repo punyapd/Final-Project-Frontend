@@ -51,12 +51,12 @@ h2,
 h3,
 .h3 {
     font-size: 2.4rem;
-    line-height: 2rem;
+    line-height: 2.76rem;
     font-weight: 400;
     letter-spacing: -0.02em;
     @include media-breakpoint-up(xl) {
         font-size: 3.5rem;
-        line-height: 3.5rem;
+        line-height: 4.25rem;
     }
 }
 
