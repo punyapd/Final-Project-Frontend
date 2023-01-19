@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelector(".selected"),t=document.querySelector(".options-container"),c=document.querySelectorAll(".option");e.addEventListener("click",(()=>{t.classList.toggle("active")})),c.forEach((c=>{c.addEventListener("click",(()=>{e.innerHTML=c.querySelector("label").innerHTML,t.classList.remove("active")}))}))})();
