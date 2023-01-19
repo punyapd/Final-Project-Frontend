@@ -318,9 +318,9 @@ $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 $teal:          $teal    !default;
 $blush:         $blush    !default;
-$space:         $space;
-$mint:          $mint;
-$lightmint:  $lightmint;
+$space:         $space   !default;
+$mint:          $mint     !default;
+$lightmint:  $lightmint    !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map

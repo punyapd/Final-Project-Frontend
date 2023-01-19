@@ -10,18 +10,28 @@
                 font-size: 2.8rem;
                 line-height: 3.2rem;
                 padding-left: 3rem;
-                border:1px solid $sky;
+                border: 1px solid $sky;
                 &:focus {
                     outline: none;
                 }
-               
             }
-            &__icon{
+            &__icon {
                 position: absolute;
-                right:6rem;
-                top:2rem;
-                color:$sky;
+                right: 6rem;
+                top: 2rem;
+                color: $sky;
             }
+        }
+    }
+
+    &__item {
+        box-shadow: 8px 8px 0px $blush;
+        background-color:$white;
+        transition: all 0.3s;
+        &:hover {
+            box-shadow: 8px 8px 0px $peach;
+
+            background-color: $blush;
         }
     }
 }
