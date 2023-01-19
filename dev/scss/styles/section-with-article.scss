@@ -1,5 +1,11 @@
+@import '../common-imports';
 .section-with-article{
     &__image{
+        &::before{
+            @include media-breakpoint-up(md){
+                --bs-aspect-ratio:73%;
+            }
+        }
         &--shadow{
             filter:drop-shadow(8px 8px 0px #F5CEBE);
         }

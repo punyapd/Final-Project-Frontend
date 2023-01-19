@@ -576,10 +576,10 @@ $aspect-ratios: (
   "16x9": calc(9 / 16 * 100%),
   "21x9": calc(9 / 21 * 100%),
   "394x287":calc(233/394 * 100%),
-  "279x238":calc(238/279 *100%),
+  "279x238":calc(238/279 *100%), //video
   "404x276":calc(276/404 *100%),
-  "462x276":calc(276/462 *100%),
-  "904x480":calc(480/904 * 100%),
+  "318x267":calc(267.5/318.5 *100%), //things to remember
+  "327x230":calc(230/327 * 100%), //service point
   "327x234":calc(234/327*100%), //leadspace image one
   "509x287":calc(287.68/509.6 * 100%),   //leadspace image tow
   "335x201":calc(201 / 335 * 100%),//blog single image

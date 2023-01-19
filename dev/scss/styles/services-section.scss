@@ -1,36 +1,38 @@
 @import '../common-imports';
 .service-point {
     &__image {
-        position: relative;
-        &--full {
-            height: 23rem;
-            @include media-breakpoint-up(md) {
-                height: 48rem;
+        @include media-breakpoint-up(md) {
+            position: relative;
+        }
+
+        &--item {
+            &::before {
+                @include media-breakpoint-up(md) {
+                    --bs-aspect-ratio: 53.09%;
+                }
+                @include media-breakpoint-up(xl) {
+                    --bs-aspect-ratio: 38.7%;
+                }
             }
         }
 
-        &__case{
-            background-color: red;
-            height: 12rem;
-            @include media-breakpoint-up(md){
-
+        &__case {
+            @include media-breakpoint-up(md) {
                 position: absolute;
-                bottom:0;
-                right:0;
-               
+                bottom: 0;
+                right: 0;
             }
 
-            &--arrow{
-                i{
-                    font-size:2.4rem;
-                    @include media-breakpoint-up(md){
-                           font-size: 6rem;
+            &--arrow {
+                i {
+                    font-size: 2.4rem;
+                    @include media-breakpoint-up(md) {
+                        font-size: 6rem;
                     }
 
-                    @include media-breakpoint-up(md){
+                    @include media-breakpoint-up(md) {
                         font-size: 8rem;
-                 }
-
+                    }
                 }
             }
         }

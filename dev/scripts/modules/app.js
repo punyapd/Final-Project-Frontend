@@ -9,6 +9,7 @@
 // //offcanavas
 // import 'bootstrap/js/dist/offcanvas'
 import 'bootstrap/dist/js/bootstrap'
+
 class global {
     constructor() {
         this.myModal = document.getElementById('exampleModal')

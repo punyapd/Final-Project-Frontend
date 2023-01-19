@@ -1,58 +1,36 @@
 @import '../common-imports';
 
-
-
-
-.leadspace{
-   &-item2{
-    display: none;
-    @include media-breakpoint-up(md){
-        display: block;
-    }
-   }
-}
 .leadspace {
-    &-item1 {
-        &__image {
-           ::before{
-
-               @include media-breakpoint-up(md) {
-                padding-top:var(--bs-aspect-ratio(72.94%));
-                   
-               }
-               @include media-breakpoint-up(xl) {
-                    padding-top:var(--bs-aspect-ratio(81.62%));
-               }
-           }
+    &-item2 {
+        display: none;
+        @include media-breakpoint-up(md) {
+            display: block;
         }
-    }
-    .ratio-327x234{
-        ::before{
-            @include media-breakpoint-up(xl) {
-               --bs-aspect-ratio:56.45%
-             }
 
-            @include media-breakpoint-up(xl) {
-                // max-height:397px;
-               --bs-aspect-ratio:52.65%
+        &__image {
+            &::before {
+                @include media-breakpoint-up(md) {
+                    --bs-aspect-ratio: 56.45%;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    --bs-aspect-ratio: 52.45%;
+                }
             }
         }
     }
-    &-item2 {
-        // &.ratio-327x234{
-        //     ::before{
-        //         @include media-breakpoint-up(xl) {
-        //            --bs-aspect-ratio:56.45%
-        //          }
 
-        //         @include media-breakpoint-up(xl) {
-        //             // max-height:397px;
-        //            --bs-aspect-ratio:52.65%
-        //         }
-        //     }
-        // }
+    &-item1 {
         &__image {
-            
+            &::before {
+                @include media-breakpoint-up(md) {
+                    --bs-aspect-ratio: 72.94%;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    --bs-aspect-ratio: 81.68%;
+                }
+            }
         }
     }
 }

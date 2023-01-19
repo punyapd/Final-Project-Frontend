@@ -1,8 +1,10 @@
-<section class="about-us bg-@@bgColor py-10 py-md-20 py-xl-30">
+
+<!-- about section for home page -->
+<section class="about-section bg-@@bgColor py-10 py-md-20 py-xl-30">
     <div class="container">
         <div class="row justify-content-between ">
             <!-- card column -->
-            <div class="col-12 col-md-6 mb-10 mb-md-0 about-us__card">
+            <div class="col-12 col-md-6 mb-10 mb-md-0 about-section__card">
                 @@include("../cards/card-a01.html",{
                 "showHideEyebrow":"",
                 "borderTop":"",
@@ -18,12 +20,12 @@
             </div>
             <!--image column -->
             <div class="col-12 col-md-6 col-xl-5 align-middle about-us__image">
-                <div class="video-section bg-lightmint p-6 @@showHideVideo">
+                <div class="about-section__video bg-lightmint p-6 @@showHideVideo">
                     <h6 class="h6 mb-4">how about us ?</h6>
-                    <div>
-                        <video class="h-100 w-100"
-                            src="../../../images/COSTA RICA IN 4K 60fps HDR (ULTRA HD).mp4"
-                            title="YouTube video player"
+                    <div class="about-section__video__wrapper positon-relative">
+                        <video class="h-100 w-100  ratio ratio-279x238"
+                            src="images/video.mp4"
+                            title="about us video"
                             allowfullscreen
                             controls
                             >

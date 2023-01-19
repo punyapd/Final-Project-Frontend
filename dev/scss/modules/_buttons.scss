@@ -27,11 +27,11 @@
        
     }
 
-    // &-outline-light{
-    //     &:hover{
-    //         background-color:$space;
-    //         border:1px solid $primary;
-    //         color:$primary;
-    //     }
-    // }
+    &-outline-light{
+        &:hover{
+            background-color:$space;
+            border:1px solid $primary;
+            color:$primary;
+        }
+    }
 }
