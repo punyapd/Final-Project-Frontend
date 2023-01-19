@@ -1,0 +1,58 @@
+@import '../common-imports';
+.home-slider {
+    &__image {
+        width:100%;
+        @include media-breakpoint-up(md) {
+            width:50%;
+        }
+        figure {
+            &::before {
+                @include media-breakpoint-up(md) {
+                    --bs-aspect-ratio:124%;
+                }
+                @include media-breakpoint-up(xl) {
+                    --bs-aspect-ratio:87.94%;
+                }
+            }
+        }
+    }
+
+    &__details{
+        width:100%;
+        @include media-breakpoint-up(md) {
+            width:50%;
+        }
+    }
+
+    &__changer{
+        display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &__arrow {
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+                background-color: $white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &__dots{
+                display:flex;
+                &__item{
+                    width: 0.8rem;
+                    height: 0.8rem;
+                    border-radius: 50%;
+                    border: 1px solid $sky;
+                    margin-left: 0.8rem;
+                    margin-right: 0.8rem;
+                    background: $blush;
+                    &:first-child {
+                        background: $sky;
+                    }
+                }
+            }
+    }
+}

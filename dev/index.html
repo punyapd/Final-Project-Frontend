@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'Home'})
+    </head>
 
-<head>
-    @@include('includes/head.html',{'pageTitle':'Home'})
-</head>
+    <body>
+        <!-- header start -->
+        @@include('includes/navbar.html')
+        <!-- main section start -->
 
-<body>
-    <!-- header start -->
-    @@include('includes/navbar.html')
-    <main class="theme-main">
+        <!-- prettier-ignore -->
+
+        <main class="theme-main">
         <!-- herosection start -->
+
         @@include('includes/modules/section/herosection.html',{
             "imgSrc1":"images/skywithcloud.png",
             "imgSrc2":"images/boat.png",
@@ -26,8 +30,8 @@
             "textColor":"",
             "cardTitleMobile":"From the depths of the Earth to outer space, we are building the barely possible. ",
             "cardDescriptionMobile":"First Mode is a creative engineering company meeting humanity&#39;s challenges and opportunities—wherever we find them.",
-            
         })
+            
 
         <!-- about us -->
         @@include('includes/modules/section/about-section.html',{
@@ -44,6 +48,14 @@
             "btnText":"More Articles",
             "imgSrc":"images/chill.png",
             "imgTitle":"things to remember picture"
+        })
+
+        <!-- slider -->
+        @@include('includes/modules/slider/ourteamslider.html',{
+             "eyebrow":"our team",
+             "imageName":"slideimage.png",
+             "description":"“It is not so much for its beauty that the forest makes a claim upon mens hearts, as for that subtle something, that quality of air that emanation from old trees, that so wonderfully changes and renews a weary spirit.”",
+             "title":"Sally Albana - Site Engineer",
         })
 
           <!-- blogs -->
@@ -81,11 +93,7 @@
         @@include("includes/footer.html")
 
     </main>
-    <!-- include script for js -->
-    @@include('includes/scripts.html')
-
-    <!-- main section -->
-
-</body>
-
+        <!-- include script for js -->
+        @@include('includes/scripts.html')
+    </body>
 </html>

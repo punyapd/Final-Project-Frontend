@@ -1,7 +1,7 @@
-
 <!-- herosection for about and home page  -->
 <section class="hero-section bg-blush py-8 py-md-10 py-xl-20">
     <div class="container">
+        <!-- prettier-ignore -->
         @@include("../above-the-fold/image-section.html",{ 
             "colReverse":"@@colReverse",
             "imgSrc1":"@@imgSrc1",
@@ -11,9 +11,12 @@
             "displayXS1":"@@displayXS1",
             "displayMD1":"@@displayMD1"
          })
-         <!-- mobile only card -->
-        <div class=" hero-section__card--mobile row mt-6 mt-md-10 mt-xl-18  justify-content-between @@colReverse">
-            <div class="col-12  d-md-none">
+        <!-- prettier-ignore-end -->
+        <!-- mobile only card -->
+        <div class="hero-section__card--mobile row mt-6 mt-md-10 mt-xl-18 justify-content-between @@colReverse">
+            <div class="col-12 d-md-none">
+                <!-- prettier-ignore -->
+
                 @@include("../cards/card-a03.html",{
                 "padding":"px-6 py-10",
                 "borderTop":"@@borderTop",
@@ -26,7 +29,9 @@
                 })
             </div>
             <!-- contact us look deep into nature -->
-            <div class= " hero-section__card--desktop col-12 col-xl-8 d-none d-md-block ">
+            <div class="hero-section__card--desktop col-12 col-xl-8 d-none d-md-block">
+                <!-- prettier-ignore -->
+
                 @@include("../cards/card-a03.html",{
                 "padding":"@@padding",
                 "borderTop":"@@borderTop",
@@ -39,12 +44,10 @@
                 "textColor":"@@textColor"
                 
                 })
-
-
             </div>
             <div class="col-xl-4 d-none d-xl-block hero-section__image">
                 <figure class="hero-section__image--item ratio ratio-1x1">
-                    <img src="@@imgSrc3" class="object-fit h-100 w-100" alt="beatuiful home" loading = "lazy" >
+                    <img src="@@imgSrc3" class="object-fit h-100 w-100" alt="beatuiful home" loading="lazy" />
                 </figure>
             </div>
         </div>

@@ -37,10 +37,10 @@
                         <img src="images/logo-light.svg" alt="offcanvas-header-logo" />
                     </figure>
                 </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center flex-grow-1 pt-40 text-center text-white gap-10">
+                <div class="offcanvas-body overflow-y-scroll">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pt-40 pb- text-center text-white gap-10">
                         <li class="nav-item">
-                            <a  href="about.html" class="nav-link" aria-current="page">About</a>
+                            <a href="about.html" class="nav-link" aria-current="page">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="blog-list.html">Blog</a>
@@ -59,14 +59,13 @@
             </div>
 
             <!-- button -->
-
-            <!-- <button class=" btn btn-outline-dark d-none d-md-inline-block d-xl-none px-4 py-2 fw-bold">Join Us Now</button> -->
+            <!-- prettier-ignore -->
             @@include('./modules/button/button.html',{
                 "text":"Join Us Now",
                 "btnCategory":"btn-outline-space",
                 "showHideBtn":"d-none d-md-inline-block d-xl-none",
                 "showHideArrow":"d-none"
-              }) 
+              })
             <!-- laptop and desktop navigation -->
 
             <nav class="d-none d-xl-inline-block">

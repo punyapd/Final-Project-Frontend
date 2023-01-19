@@ -1,116 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        @@include('includes/head.html',{'pageTitle':'Blogs'})
+    </head>
 
-<head>
-    @@include('includes/head.html',{'pageTitle':'Blogs'})
-</head>
+    <body>
+        <!-- prettier-ignore -->
 
-<body>
-    <!-- header start -->
-    @@include('includes/navbar.html')
+        <!-- header start -->
+        @@include('includes/navbar.html')
 
-    <!-- Herosection -->
-    @@include('includes/modules/section/blog-herosection.html',{
-        "imageName":"blog1.png",
-        "imageTitle":"bloglist_herosection1",
-        "title":"Vivamus vitae finibus dolor. Suspendisse finibus ante in sapien fermentum.",
-        "@@dipslay":"",
-    })
+        <!-- Herosection -->
+        <!-- prettier-ignore -->
+        <main>
+            @@include('includes/modules/section/blog-herosection.html',{
+                "imageName":"blog1.png",
+                "imageTitle":"bloglist_herosection1",
+                "title":"Vivamus vitae finibus dolor. Suspendisse finibus ante in sapien fermentum.",
+                "@@dipslay":"",
+            })
 
-    <!-- categories with cards  -->
-    @@include('includes/modules/section/blog-list-with-cards.html',{
-        'articleList': {
-            "list": [
-            {
-                'articleImage':'article1.png',
-                'imageTitle':"article1",
-                'shadow':'shadow-blush',
-                'date':'June 11, 2021',
-                'articleTitle': 'Interesting Facts I Bet You Never Knew About BLOGS',
-                'bgColorCard':"",
-            },
-            {
-                'articleImage':'article2.png',
-                'imageTitle':'article2',
-                'shadow':"shadow-peach",
-                'date':'June 11, 2021',
-                'bgColorCard':"bg-blush",
-                'articleTitle': 'verything You Wanted to Know About BLOGS and Were Too EEmbarrassed to Ask'
-            },
-            {
-                'articleImage':'article3.png',
-                'imageTitle':"article3",
-                'shadow':"shadow-blush",
-                'date':'June 11, 2021',
-                'bgColorCard':"",
-                'articleTitle': 'What Can You Do To Save Your BLOGS From Destruction By Social Media?'
-            },
-            {
-                'articleImage':'article4.png',
-                'imageTitle':"article4",
-                'shadow':'shadow-blush ',
-                'date':'June 11, 2021',
-                'bgColorCard':"",
-                'articleTitle': 'White Paper: Call to NASA for Low-Cost Innovation, New Talent Pipeline in Missions'
-            },
-            {
-                'articleImage':'article5.png',
-                'imageTitle':"article5",
-                'shadow':"shadow-blush",
-                'date':'June 11, 2021',
-                'bgColorCard':"",
-                'articleTitle': 'Becoming Friends with a Mars Rover'
+            <!-- categories with cards  -->
+            @@include('includes/modules/section/blog-list-with-cards.html',{
+                'articleList': {
+                    "list": [
+                    {
+                        'articleImage':'article1.png',
+                        'imageTitle':"article1",
+                        'shadow':'shadow-blush',
+                        'date':'June 11, 2021',
+                        'articleTitle': 'Interesting Facts I Bet You Never Knew About BLOGS',
+                        'bgColorCard':"",
+                    },
+                    {
+                        'articleImage':'article2.png',
+                        'imageTitle':'article2',
+                        'shadow':"shadow-peach",
+                        'date':'June 11, 2021',
+                        'bgColorCard':"bg-blush",
+                        'articleTitle': 'verything You Wanted to Know About BLOGS and Were Too EEmbarrassed to Ask'
+                    },
+                    {
+                        'articleImage':'article3.png',
+                        'imageTitle':"article3",
+                        'shadow':"shadow-blush",
+                        'date':'June 11, 2021',
+                        'bgColorCard':"",
+                        'articleTitle': 'What Can You Do To Save Your BLOGS From Destruction By Social Media?'
+                    },
+                    {
+                        'articleImage':'article4.png',
+                        'imageTitle':"article4",
+                        'shadow':'shadow-blush ',
+                        'date':'June 11, 2021',
+                        'bgColorCard':"",
+                        'articleTitle': 'White Paper: Call to NASA for Low-Cost Innovation, New Talent Pipeline in Missions'
+                    },
+                    {
+                        'articleImage':'article5.png',
+                        'imageTitle':"article5",
+                        'shadow':"shadow-blush",
+                        'date':'June 11, 2021',
+                        'bgColorCard':"",
+                        'articleTitle': 'Becoming Friends with a Mars Rover'
 
-            },
-            {
-                'articleImage':'article6.png',
-                'imageTitle':"article6",
-                'shadow':"shadow-blush",
-                'bgColorCard':"",
-                'date':'June 11, 2021',
-                'articleTitle': 'Some Assembly Required: Documentation in Mars Rover Design'
-            }                       
-            ]
-        },
-        'categoryList': { 
-            "list": [
-            {
-                'categoryName':'news'
-            },
-            {
-                'categoryName':'travel'
-            },
-            {
-                'categoryName':'Blogs'
-            },
-            {
-                'categoryName':'facts'
-            },
-            {
-                'categoryName':'Global'
-            }
-            ]
-        }
-    })
+                    },
+                    {
+                        'articleImage':'article6.png',
+                        'imageTitle':"article6",
+                        'shadow':"shadow-blush",
+                        'bgColorCard':"",
+                        'date':'June 11, 2021',
+                        'articleTitle': 'Some Assembly Required: Documentation in Mars Rover Design'
+                    }                       
+                    ]
+                },
+                'categoryList': { 
+                    "list": [
+                    {
+                        'categoryName':'news'
+                    },
+                    {
+                        'categoryName':'travel'
+                    },
+                    {
+                        'categoryName':'Blogs'
+                    },
+                    {
+                        'categoryName':'facts'
+                    },
+                    {
+                        'categoryName':'Global'
+                    }
+                    ]
+                }
+            })
 
-   
-    <!-- contact us card -->
-    @@include("includes/modules/section/section-see-our-blogs.html",{
-        "padding":"py-10 py-md-20",
-        "showHideEyebrow":"d-none",
-        "cardTitle":"Proin pretium risus suscipit viverra mattis. Aliquam non nunc ligula.",
-        "cardDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut porta diam.",
-        "bgColorCard":"mint",
-        "btnText":"see our blogs",
-        "btnCategory":"btn-primary",
+        
+            <!-- contact us card -->
+            @@include("includes/modules/section/section-see-our-blogs.html",{
+                "padding":"py-10 py-md-20",
+                "showHideEyebrow":"d-none",
+                "cardTitle":"Proin pretium risus suscipit viverra mattis. Aliquam non nunc ligula.",
+                "cardDescription":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut porta diam.",
+                "bgColorCard":"mint",
+                "btnText":"see our blogs",
+                "btnCategory":"btn-primary",
 
-    })
+            })
+    </main>
 
-
-    <!-- footer  -->
-     @@include('includes/footer.html')
-     <!-- include script for js -->
-     @@include('includes/scripts.html')
-
-</body>
+        <!-- footer  -->
+        @@include('includes/footer.html')
+        <!-- include script for js -->
+        @@include('includes/scripts.html')
+    </body>
 </html>

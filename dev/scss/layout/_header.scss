@@ -15,19 +15,18 @@
 .navbar-toggler {
     border: none;
 
-&.navbar-toggler-icon {
-    background-image: url('../../images/Menu.svg');
-    border: 0px;
-}
-&:focus {
-    outline: 0;
-    box-shadow: none;
-}
+    &.navbar-toggler-icon {
+        background-image: url('../../images/Menu.svg');
+        border: 0px;
+    }
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
 }
 .offcanvas {
     &-header {
         border: 1px solid $peach;
-       
     }
 
     & .nav-link {
@@ -37,12 +36,10 @@
         font-size: 2.3rem;
         cursor: pointer;
         transition: all 0.3s;
-        
-            &:hover{
-              color:$teal;
-            }
 
-        
+        &:hover {
+            color: $teal;
+        }
     }
 }
 
@@ -55,15 +52,20 @@
 .navigation-menu {
     & .nav-link {
         color: black;
+        font-family: 'Inter', sans-serif;
         font-size: 1.8rem;
         font-weight: 600;
         line-height: 150%;
+        transition: all 0.3s;
+        &:hover{
+            color:$peach;
+        }
+
     }
 }
 
-
 //button
-.btn{
+.btn {
     font-family: 'Inter', sans-serif;
-    font-size:1.6rem;
+    font-size: 1.6rem;
 }

@@ -1,10 +1,10 @@
-
 <!-- about section for home page -->
 <section class="about-section bg-@@bgColor py-10 py-md-20 py-xl-30">
     <div class="container">
-        <div class="row justify-content-between ">
+        <div class="row justify-content-between">
             <!-- card column -->
             <div class="col-12 col-md-6 mb-10 mb-md-0 about-section__card">
+                <!-- prettier-ignore -->
                 @@include("../cards/card-a01.html",{
                 "showHideEyebrow":"",
                 "borderTop":"",
@@ -15,33 +15,24 @@
                 "btnText":"Learn More",
                 "btnCategory":"btn btn-outline-space",
                 })
-
-
             </div>
+
             <!--image column -->
             <div class="col-12 col-md-6 col-xl-5 align-middle about-us__image">
                 <div class="about-section__video bg-lightmint p-6 @@showHideVideo">
                     <h6 class="h6 mb-4">how about us ?</h6>
                     <div class="about-section__video__wrapper positon-relative">
-                        <video class="h-100 w-100  ratio ratio-279x238"
+                        <!-- </video> -->
+                        <video
+                            class="h-100 w-100 ratio ratio-279x238"
                             src="images/video.mp4"
                             poster="../../../images/Video.png"
                             title="about us video"
-                            allowfullscreen
                             controls
-                            >
-
-                    </video>
-
-
+                        ></video>
                     </div>
-                    <!-- </video> -->
                 </div>
-
-               
-
             </div>
-
         </div>
     </div>
 </section>

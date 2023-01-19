@@ -5,46 +5,50 @@
         <div class="blog-cards-categories d-md-flex mb-10 mb-md-20">
             <span class="Body d-block d-md-inline-block mb-2 mb-md-0">Category:</span>
 
-            <ul class=" blog-catergories-list h6  d-flex mx-1  mt-xl-1 flex-wrap text-uppercase flex-grow-1">
+            <ul class="blog-catergories-list h6 d-flex mx-1 mt-xl-1 flex-wrap text-uppercase flex-grow-1">
                 @@for (var i=0; i < categoryList.list.length; i++) {
-                    @@include('../repeator/blog-category.html',`+(JSON.stringify(categoryList.list[i]))+`)
-                }
+                @@include('../repeator/blog-category.html',`+(JSON.stringify(categoryList.list[i]))+`) }
             </ul>
         </div>
-<!-- search with filter -->
-            <div class="row blog-cards-search justify-content-md-between">
-                <div class="col-12 col-md-6 col-xl-5 blog-cards-search__input">
-                    <input type="text" class="w-100 rounded-30  h-64 position-relative text-space">
-                    <a href="#"></a><img src="images/search.svg" class=" blog-cards-search__input__icon  position-absolute cursor-pointer "></i></a>
-                </input>
+        <!-- search with filter -->
+        <div class="row blog-cards-search justify-content-md-between">
+            <div class="col-12 col-md-6 col-xl-5 blog-cards-search__input">
+                <input type="text" class="w-100 rounded-30 h-64 text-space" />
+                <a href="#">
+                    <img
+                        src="images/search.svg"
+                        class="blog-cards-search__input__icon position-absolute cursor-pointer"
+                    />
+                </a>
+            </div>
+
+            <div class=".blog-cards-latest col-12 col-md-3 align-self-end d-flex justify-content-end">
+                <div class="dropdown">
+                    <button
+                        class="border-0 bg-transparent dropdown-toggle btn"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        Latest
+                    </button>
+                    <ul class="dropdown-menu h6 pt-4 pb-6" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">alphabetical order</a></li>
+                        <li><a class="dropdown-item" href="#">features</a></li>
+                        <li><a class="dropdown-item" href="#">latest</a></li>
+                        <li><a class="dropdown-item" href="#">oldest</a></li>
+                    </ul>
                 </div>
-
-                <div class=".blog-cards-latest col-12 col-md-3 align-self-end d-flex justify-content-end">
-                    <div class="dropdown">
-                        <button class="border-0 bg-transparent dropdown-toggle btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                          Latest
-                        </button>
-                        <ul class="dropdown-menu h6 pt-4 pb-6" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">alphabetical order</a></li>
-                          <li><a class="dropdown-item" href="#">features</a></li>
-                          <li><a class="dropdown-item" href="#">latest</a></li>
-                          <li><a class="dropdown-item" href="#">oldest</a></li>
-
-                        </ul>
-                      </div>
-                </div>
-            
-
+            </div>
         </div>
-
 
         <div class="row mt-10 mt-md-20">
             @@for (var i=0; i < articleList.list.length; i++) {
-                @@include('../repeator/card-with-img.html',`+(JSON.stringify(articleList.list[i]))+`)
-            }
-    </div>
+            @@include('../repeator/card-with-img.html',`+(JSON.stringify(articleList.list[i]))+`) }
+        </div>
 
-     <!-- pagination -->
-     @@include('../pagination/pagination.html')
-</div>
+        <!-- pagination -->
+        @@include('../pagination/pagination.html')
+    </div>
 </section>
