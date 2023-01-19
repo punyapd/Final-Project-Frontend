@@ -8,34 +8,14 @@
 
 // //offcanavas
 // import 'bootstrap/js/dist/offcanvas'
-import 'bootstrap/dist/js/bootstrap'
+import 'bootstrap/dist/js/bootstrap';
 
 class global {
     constructor() {
-        // this.myModal = document.getElementById('exampleModal')
         this.stickyHeader();
-        // this.megamenuPopup();
-        // this.toggleContent();
-        // this.readMore();
     }
 
     stickyHeader() {
-
-        // const selected = document.getElementById('js-selected');
-        // console.log(selected , 'sele')
-        // const optionsContainer = document.getElementById('options-container');
-    
-        // const optionsList = document.querySelectorAll('.option');
-    
-        // selected.addEventListener('click', function(e) {
-        //     console.log(e)
-        //     e.preventDefault();
-        //     optionsContainer.classList.add('active');
-        //     console.log('click')
-        //     console.log(optionsContainer , "op")
-        // });
-
-
         var elemBody = $('body');
         var pageHeader = $('.theme-header');
         if ($(elemBody).hasClass('home')) {
@@ -78,7 +58,6 @@ class global {
             $(this).hide();
         });
     }
-
 }
 
 export default global;
