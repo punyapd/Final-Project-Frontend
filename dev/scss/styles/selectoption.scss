@@ -17,7 +17,7 @@
 .selected {
     background-color: white;
     border: 1px solid $space;
-    color: $space;
+    color:$space;
     position: relative;
     order: 0;
 }
@@ -37,7 +37,6 @@
 
 .select-box .options-container.active {
     display: block;
-    max-width: 24rem;
     opacity: 1;
     overflow-y: scroll;
 }
